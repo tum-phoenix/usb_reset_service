@@ -1,6 +1,6 @@
 # USB Reset Service
 
-This service lets modules reset a hanging USB device by its Vendor and Product ID
+This service lets modules reset a hanging USB device by its Vendor and Product ID using [USB Reset](https://github.com/tum-phoenix/usb_reset).
 
 ## Config
 
@@ -10,7 +10,7 @@ This service lets modules reset a hanging USB device by its Vendor and Product I
         <name>USB_RESET</name>
         <realName>usb_reset_service</realName>
         <config>
-            <path>/usr/bin/usb-reset</path>
+            <path>/usr/local/bin/usb-reset</path>
         </config>
     </service>
 </framework>
