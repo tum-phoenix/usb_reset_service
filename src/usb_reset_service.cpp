@@ -14,7 +14,7 @@ void UsbResetService::destroy() {
 
 bool UsbResetService::reset(uint16_t vendorId, uint16_t productId) {
 
-    auto path = config().get<std::string>("path", "/usr/bin/usb-reset");
+    auto path = config().get<std::string>("path", "/usr/local/bin/usb-reset");
     if(path.empty()) {
         logger.error("path") << "Reset script path is not set or empty";
         return false;
